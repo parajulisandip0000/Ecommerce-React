@@ -98,7 +98,7 @@ const Sidebar = ({ closeSidebar }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/sign-in" className="hover:text-blue-600">
+                <Link to="/login" className="hover:text-blue-600">
                   Sign in
                 </Link>
               </li>
