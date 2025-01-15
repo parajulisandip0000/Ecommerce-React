@@ -30,13 +30,13 @@ const CustomerDashboard = () => {
               </Link>
             </li>
             <li>
-              <Link to="/customer/settings" className="hover:underline">
-                Account Settings
+              <Link to="/customer/cart" className="hover:underline">
+                Shopping Cart
               </Link>
             </li>
             <li>
-              <Link to="/customer/cart" className="hover:underline">
-                Shopping Cart
+              <Link to="/customer/settings" className="hover:underline">
+                Account Settings
               </Link>
             </li>
           </ul>
