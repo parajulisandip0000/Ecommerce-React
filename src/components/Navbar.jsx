@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Top Navbar (Sticky) */}
-      <header className="bg-gray-800 text-white py-4 sticky top-0 shadow-md z-50">
+      <header className="bg-gray-800 text-white py-4 sticky top-0 shadow-md">
         <div className="flex justify-between items-center container mx-auto px-4">
           {/* Logo */}
           <Link to="/" className="text-3xl font-bold">
@@ -35,17 +35,20 @@ const Navbar = () => {
 
           {/* Login, Wishlist, and Cart */}
           <div className="flex space-x-4">
+          <Link to="/register" className="text-white hover:text-yellow-500">
+              Register
+            </Link>
             <Link to="/login" className="text-white hover:text-yellow-500">
               Login
             </Link>
             <Link
-              to="/wishlist"
+              to="/customer/wishlist"
               className="text-white hover:text-yellow-500 flex items-center"
             >
               <FaHeart className="mr-2" /> Wishlist {/* Wishlist Icon */}
             </Link>
             <Link
-              to="/cart"
+              to="/customer/cart"
               className="text-white hover:text-yellow-500 flex items-center"
             >
               <FaShoppingCart className="mr-2" /> Cart {/* Shopping Cart Icon */}

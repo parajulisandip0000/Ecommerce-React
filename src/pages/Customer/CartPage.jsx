@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa"; // Import Delete Icon
+import { Link } from 'react-router-dom';
 
 const CartPage = () => {
   // Static cart items with quantity and selected state
@@ -240,9 +241,9 @@ const CartPage = () => {
 
           {/* Checkout Button */}
           <div className="mt-6 text-center">
-            <button className="bg-yellow-500 text-white py-2 px-6 rounded-lg w-full">
+          <Link to="/customer/checkout"> <button className="bg-yellow-500 text-white py-2 px-6 rounded-lg w-full">
               Proceed to Checkout
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
